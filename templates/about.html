@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>My Website - About</title>
-    <link rel="stylesheet" href="/static/css/app.css">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{
+    url_for('static',filename='css/app.css') }}"
+    />
+  </head>
 
-<body>
-    <h1>Jason Gayle</h1>
-    <p>Write a short paragraph about yourself here.</p>
-</body>
-
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Jason Gayle</h1>
+        <p>A student passionate about all things related to software</p>
+      </div>
+    </div>
+  </body>
 </html>
